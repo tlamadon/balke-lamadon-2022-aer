@@ -1,0 +1,18 @@
+name: balke-lamadon
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.7   # or 2.7 if you are feeling nostalgic
+  - matplotlib
+  - pandas
+  - pylint
+  - opt_einsum
+  - tqdm
+  - click
+  - rich
+  - toml
+  - scipy
+  - statsmodels
+  - tinydb
+  - jupyterlab>=3
+
