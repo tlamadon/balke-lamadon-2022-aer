@@ -1,0 +1,1 @@
+Folder that contains all the figures of the paper.

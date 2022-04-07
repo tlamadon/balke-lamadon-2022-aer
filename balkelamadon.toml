@@ -1,0 +1,62 @@
+[main]
+
+moment_file = 'results/moments-jmp-2022.csv'
+param_opt = 'results/parameters_at_optimal.json'
+
+moments = [
+    "pr_u2e", 
+    "pr_j2j", 
+    "pr_e2u", 
+    "var_w", 
+    "var_w_longac", 
+    "w_u2e_ee_gap",
+    "mean_dw", 
+    "mean_dw_j2j_2",
+    "var_dw", 
+    "cov_dwdw_l4", 
+    "var_dy", 
+    "cov_dydy_l4",
+    "cov_dydw", 
+    "cov_dydsep"]
+
+parameters = [
+    "x_corr", 
+    "z_corr", 
+    "prod_var_x", 
+    "prod_err_w", 
+    "prod_err_y",
+    "prod_var_x2", 
+    "prod_var_z", 
+    "efcost_ce",
+    "u_bf_m", 
+    "alpha", 
+    "s_job", 
+    "efcost_sep"
+] 
+
+[param_bounds]
+efcost_ce= [0.2, 0.5]
+s_job= [0.1, 0.8]
+alpha= [0.0, 0.4]
+x_corr= [0.6, 0.9999]
+z_corr= [0.6, 0.9999]
+prod_var_x= [0.01, 1.0]
+prod_var_x2= [0.01, 1.0]
+prod_var_z= [0.01, 1.0]
+u_bf_m= [0.000, 0.5]
+u_rho= [1.2, 1.7]
+sigma= [0.3, 0.9]
+prod_rho=   [0.5, 1.5]
+efcost_sep= [0.000, 0.0025]
+sim_nt_burn= [1, 100]
+prod_err_w= [0.0, 0.3]
+prod_err_y= [0.0, 0.5]
+
+[seeds]
+model_fit = 5423
+model_to_life = 2134
+slices = 4651246
+bootstrap = 54235
+passthrough = 5426
+policy = 23620324
+optimizer = 83412543
